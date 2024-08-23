@@ -1,0 +1,182 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D8E6F3; /* Set background color to match uploaded image */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-size: 15px; /* Set font size to 13px */
+        }
+
+        #quiz-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #timer {
+            font-size: 13px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            display: none; /* Hide timer by default */
+        }
+
+        #question-count {
+            font-size: 13px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        #quiz-container, #result-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px; /* Add margin to create space at the bottom */
+        }
+
+        #question-container {
+            margin-bottom: 20px;
+        }
+
+        #question {
+            font-weight: bold; /* Make questions bold */
+        }
+
+        #options button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        #options button:hover {
+            background-color: #d0d0d0;
+        }
+
+        #controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #result-container {
+            display: none;
+        }
+
+        #result-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #result-container li {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .correct {
+            background-color: #d4edda;
+        }
+
+        .wrong {
+            background-color: #f8d7da;
+        }
+
+        .answer-option {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+
+        #nav-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #nav-buttons button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        #nav-buttons button:disabled {
+            background-color: #b0c4de;
+            cursor: not-allowed;
+        }
+
+        #nav-buttons button:hover:not(:disabled) {
+            background-color: #0056b3;
+        }
+
+        #skip-btn, #reset-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        #skip-btn:hover, #reset-btn:hover {
+            background-color: #d9534f;
+        }
+
+        #summary {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        #summary strong {
+            font-weight: bold;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 600px) {
+            #quiz-container, #result-container {
+                padding: 15px;
+                width: 90%;
+            }
+
+            #options button {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            #nav-buttons button, #skip-btn, #reset-btn {
+                padding: 8px 15px;
+            }
+
+            #summary {
+                font-size: 12px;
+            }
+        }
+    body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
